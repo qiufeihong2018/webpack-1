@@ -1,26 +1,26 @@
-# Project Structure
+# 项目结构
 
 ``` bash
 .
-├── build/                      # webpack config files
+├── build/                      # webpack 配置文件
 │   └── ...
 ├── config/
-│   ├── index.js                # main project config
+│   ├── index.js                # 主项目配置
 │   └── ...
 ├── src/
-│   ├── main.js                 # app entry file
-│   ├── App.vue                 # main app component
-│   ├── components/             # ui components
-│   │   └── ...
+│   ├── main.js                 # app 文件
+│   ├── App.vue                 # 主app组件
+│   ├── components/             # ui组件
+│   │   └── ...
 │   └── assets/                 # module assets (processed by webpack)
 │       └── ...
-├── static/                     # pure static assets (directly copied)
+├── static/                     # 纯静态资产(直接复制)
 ├── test/
-│   └── unit/                   # unit tests
-│   │   ├── specs/              # test spec files
-│   │   ├── eslintrc            # config file for eslint with extra settings only for unit tests
-│   │   ├── index.js            # test build entry file
-│   │   ├── jest.conf.js        # Config file when using Jest for unit tests
+│   └── unit/                   # 单元测试
+│   │   ├── specs/              # 测试规范文件
+│   │   ├── eslintrc            # eslint的配置文件，仅为单元测试添加额外设置
+│   │   ├── index.js            # 测试构建条目文件
+│   │   ├── jest.conf.js        # 用jest做单元测试的配置文件
 │   │   ├── karma.conf.js       # test runner config file when using Karma for unit tests
 │   │   └── setup.js            # file that runs before Jest runs your unit tests
 │   └── e2e/                    # e2e tests
