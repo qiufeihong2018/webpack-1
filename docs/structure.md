@@ -21,8 +21,8 @@
 │   │   ├── eslintrc            # eslint的配置文件，仅为单元测试添加额外设置
 │   │   ├── index.js            # 测试构建条目文件
 │   │   ├── jest.conf.js        # 用jest做单元测试的配置文件
-│   │   ├── karma.conf.js       # test runner config file when using Karma for unit tests
-│   │   └── setup.js            # file that runs before Jest runs your unit tests
+│   │   ├── karma.conf.js       # 在对单元测试使用Karma时测试运行器配置文件
+│   │   └── setup.js            # 在Jest运行单元测试之前运行的文件
 │   └── e2e/                    # e2e tests
 │   │   ├── specs/              # test spec files
 │   │   ├── custom-assertions/  # custom assertions for e2e tests
