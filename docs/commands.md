@@ -1,42 +1,42 @@
-# Build Commands
+# 构建命令
 
-All build commands are executed via [NPM Scripts](https://docs.npmjs.com/misc/scripts).
+所有的构建命令都是通过 [NPM脚本](https://docs.npmjs.com/misc/scripts)执行的。
 
 ### `npm run dev`
 
-> Starts a Node.js local development server. See [API Proxying During Development](proxy.md) for more details.
+> 开启一个Node.js本地开发服务器。为了获得更多信息，看 [API Proxying During Development](proxy.md)。
 
-- Webpack + `vue-loader` for single file Vue components.
-- State preserving hot-reload
-- State preserving compilation error overlay
-- Lint-on-save with ESLint
-- Source maps
+- Webpack + `vue-loader` 为vue单页面文件
+- 状态保护热重载
+- 状态保留编译错误覆盖
+- 用 ESLint Lint-on-save 
+- 源映射
 
 ### `npm run build`
 
-> Build assets for production. See [Integrating with Backend Framework](backend.md) for more details.
+> 为生产环境构建静态文件。 为了获得更多信息，看 [Integrating with Backend Framework](backend.md)。
 
-- JavaScript minified with [UglifyJS v3](https://github.com/mishoo/UglifyJS2/tree/harmony).
-- HTML minified with [html-minifier](https://github.com/kangax/html-minifier).
-- CSS across all components extracted into a single file and minified with [cssnano](https://github.com/ben-eb/cssnano).
-- All static assets compiled with version hashes for efficient long-term caching, and a production `index.html` is auto-generated with proper URLs to these generated assets.
+- 用[UglifyJS v3](https://github.com/mishoo/UglifyJS2/tree/harmony)压缩javascript。
+- 用[html-minifier](https://github.com/kangax/html-minifier)压缩html。
+- 用[cssnano](https://github.com/ben-eb/cssnano)将CSS的所有组件提取并压缩成一个单一的文件。
+- 为了高效的长期缓存，用版本哈希去编译所有的静态资源文件，并且生产环境的 `index.html` 自动生成正确的url到这些生成的静态文件。
 
 ### `npm run unit`
 
-> Run unit tests in JSDOM with [Jest](https://facebook.github.io/jest/docs/getting-started.html). See [Unit Testing](unit.md) for more details.
+> 用[Jest](https://facebook.github.io/jest/docs/getting-started.html)在JSDOM中运行单元测试。 为了获得更多信息，看 [Unit Testing](unit.md) 。
 
-- Supports ES2015+ in test files.
-- Easy [mocking](https://facebook.github.io/jest/docs/mock-functions.html).
+- 支持 ES2015+ 在测试文件中。
+- 简单的 [mocking](https://facebook.github.io/jest/docs/mock-functions.html)。
 
 ### `npm run e2e`
 
-> Run end-to-end tests with [Nightwatch](http://nightwatchjs.org/). See [End-to-end Testing](e2e.md) for more details.
+> 用 [Nightwatch](http://nightwatchjs.org/)运行端对端测试。 为了获得更多信息，看 [End-to-end Testing](e2e.md) 。
 
-- Run tests in multiple browsers in parallel.
-- Works with one command out of the box:
-  - Selenium and chromedriver dependencies automatically handled.
-  - Automatically spawns the Selenium server.
+- 在多个浏览器中并行运行测试。
+- 用一个命令开箱即用：
+  - Selenium and chromedriver 依赖自动处理。
+  - 自动生成Selenium服务器。
 
 ### `npm run lint`
 
-> Runs eslint and reports any linting errors in your code. See [Linter Configuration](linter.md)
+> 运行 eslint和支持各种 linting 错误在你的代码中。 看 [Linter Configuration](linter.md)
