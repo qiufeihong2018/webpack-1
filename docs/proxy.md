@@ -1,9 +1,8 @@
-# API Proxying During Development
+# 在开发期间的api代理
 
-When integrating this boilerplate with an existing backend, a common need is to access the backend API when using the dev server. To achieve that, we can run the dev server and the API backend side-by-side (or remotely), and let the dev server proxy all API requests to the actual backend.
+在这个模板和一个已经存在的后端集合时，一个常见的需求就是当使用dev服务器去访问后端api。为了实现那个，我们可以同时运行开发服务器和api后端，并且让开发服务器去代理所有api请求到真实的后端地址。
 
-To configure the proxy rules, edit `dev.proxyTable` option in `config/index.js`. The dev server is using [http-proxy-middleware](https://github.com/chimurai/http-proxy-middleware) for proxying, so you should refer to its docs for detailed usage. But here's a simple example:
-
+为了管理代理规则，编辑 `dev.proxyTable` 选项在 `config/index.js`。这个开发服务器正使用 [http-proxy-middleware](https://github.com/chimurai/http-proxy-middleware) 作为代理，所以你需要阅读其相关详细使用文档。但是这是一个简单例子：
 ``` js
 // config/index.js
 module.exports = {
